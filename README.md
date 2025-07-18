@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧑‍💻 DLGKiet Portfolio
 
-## Getting Started
+Đây là source code cho portfolio cá nhân của **DLGKiet**, được xây dựng bằng **Next.js**, **TypeScript** và **Tailwind CSS**.
 
-First, run the development server:
+---
+
+## 🚀 Hướng dẫn cài đặt
+
+Thực hiện theo các bước sau để chạy dự án trên máy local:
+
+### 1. Clone repository
+
+```bash
+git clone https://github.com/dlgkiet/my-portfolio.git
+```
+
+### 2. Mở folder bằng VS Code
+
+```bash
+cd my-portfolio
+code .
+```
+
+### 3. Cài đặt các dependencies
+
+```bash
+npm install
+```
+
+### 4. Fix các lỗi bảo mật tự động (nếu có)
+
+```bash
+npm audit fix
+```
+
+### 5. Chạy server phát triển
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Truy cập địa chỉ: [http://localhost:3000](http://localhost:3000) để xem trang portfolio.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Cấu trúc thư mục chính
 
-## Learn More
+```bash
+dlgkiet-my-portfolio/
+├── app/                  # Routing và layout chính
+│   ├── globals.css       # File CSS toàn cục
+│   ├── layout.tsx        # Layout cho toàn app
+│   ├── page.tsx          # Trang chính
+│   └── fonts/            # Font tùy chỉnh
+├── components/           # Các component chia nhỏ theo tính năng
+│   └── ui/               # Các UI component cơ bản như button, input
+├── lib/                  # Thư viện và hàm tiện ích
+├── tailwind.config.ts    # Cấu hình Tailwind
+├── tsconfig.json         # Cấu hình TypeScript
+├── package.json          # Thông tin và scripts của project
+└── ...
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Các công nghệ sử dụng
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **Next.js** – Framework React hiện đại
+* **TypeScript** – Ngôn ngữ lập trình có kiểm tra kiểu tĩnh
+* **Tailwind CSS** – CSS utility-first
+* **ESLint** – Công cụ kiểm tra và định dạng code
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 Giấy phép
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Dự án được phát hành với [MIT License](LICENSE) – thoái mái sử dụng và chỉnh sửa.
