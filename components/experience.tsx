@@ -22,6 +22,13 @@ const companies: Company[] = [
     link: "https://www.grantthornton.com.vn/",
     description: "",
   },
+  {
+    id: "2",
+    name: "S4",
+    logo: "https://s4.com.vn/wp-content/uploads/2024/10/cropped-logo-main.png",
+    link: "https://s4.com.vn/",
+    description: "",
+  },
 ];
 
 const Experience: React.FC = () => {
