@@ -6,6 +6,7 @@ import Experience from "@/components/experience"
 import Projects from "@/components/projects"
 import Skills from "@/components/skills"
 import Contact from "@/components/contact"
+import Certifications from "@/components/certifications"
 
 export default function Portfolio() {
   return (
@@ -50,6 +51,7 @@ export default function Portfolio() {
           <Hero />
           <About />
           <Education />
+          <Certifications />
           <Experience />
           <Projects />
           <Skills />

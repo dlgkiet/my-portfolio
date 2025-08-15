@@ -24,6 +24,7 @@ export default function Header() {
   const navItems = [
     { href: "#about", label: t("About") },
     { href: "#education", label: t("Education") },
+    { href: "#certifications", label: t("Certifications") },
     { href: "#experience", label: t("Experience") },
     { href: "#projects", label: t("Projects") },
     { href: "#skills", label: t("Skills") },

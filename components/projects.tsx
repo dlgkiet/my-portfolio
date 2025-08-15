@@ -11,11 +11,18 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "Zalo Integration with Acumatica",
+      image: "/images/zalo-acumatica.png",
+      github: "https://github.com/dlgkiet/Acumatica_Zalo",
+      demo: "",
+      gradient: "from-orange-500 to-red-500",
+    },
+    {
       title: "Blog",
       image: "/images/blog.png",
       github: "https://github.com/ntnfit/webcuatui",
       demo: "https://toilamerp.com/blogs",
-      gradient: "from-orange-500 to-red-500",
+      gradient: "from-blue-500 to-purple-500",
     },
     {
       title: "Team Tasker",
@@ -35,7 +42,7 @@ export default function Projects() {
       title: "Fcomputer",
       image: "/images/fcomputer.png",
       github: "https://github.com/lpta2302/final_project_web",
-      demo: "",
+      demo: "https://fcomputer.vercel.app",
       gradient: "from-green-500 to-emerald-500",
     },
   ];

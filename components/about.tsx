@@ -33,7 +33,7 @@ export default function About() {
       icon: <Users className="h-7 w-7" />,
       title: t("Team Collaboration"),
       description: t(
-        "Excellent teamwork and communication skills, with experience working in collaborative environments and agile methodologies."
+        "Excellent teamwork and communication skills, with experience working in collaborative environments."
       ),
       gradient: "from-green-500 to-emerald-500",
       bgGradient:

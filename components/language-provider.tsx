@@ -1,14 +1,16 @@
-"use client"
+"use client";
 
-import React, { createContext, useContext, useEffect, useState } from "react"
+import React, { createContext, useContext, useEffect, useState } from "react";
 
 type LanguageContextype = {
-  language: string
-  changeLanguage: (lng: string) => void
-  t: (text: string) => string
-}
+  language: string;
+  changeLanguage: (lng: string) => void;
+  t: (text: string) => string;
+};
 
-const LanguageContext = createContext<LanguageContextype | undefined>(undefined)
+const LanguageContext = createContext<LanguageContextype | undefined>(
+  undefined
+);
 
 const translations: Record<string, string> = {
   "Duong Lam": "Dương Lâm",
@@ -25,10 +27,10 @@ const translations: Record<string, string> = {
 
   // Hero
   "Software Developer": "Lập trình viên Phát triển Phần mềm",
-  "Software engineering student with a background in web development, looking for an opportunity to contribute to real-world projects and grow as a developer.":
-    "Sinh viên kỹ thuật phần mềm với nền tảng phát triển web, tìm kiếm cơ hội đóng góp vào các dự án thực tế và phát triển như một developer.",
+  "Software engineering student with a background in web development, looking for an opportunity to contribute to real-world projects and grow as a developer or technical consultant.":
+    "Sinh viên kỹ thuật phần mềm với nền tảng phát triển web, tìm kiếm cơ hội đóng góp vào các dự án thực tế và phát triển như một developer hoặc technical consultant.",
   "Get In Touch": "Liên hệ",
-  "Github": "Github",
+  Github: "Github",
 
   // About
   "About Me": "Giới thiệu",
@@ -41,23 +43,26 @@ const translations: Record<string, string> = {
   "Strong analytical skills with a focus on delivering high-quality software solutions and efficient problem-solving approaches.":
     "Kỹ năng phân tích mạnh mẽ với trọng tâm cung cấp các giải pháp phần mềm chất lượng cao và phương pháp giải quyết vấn đề hiệu quả.",
   "Team Collaboration": "Làm việc nhóm",
-  "Excellent teamwork and communication skills, with experience working in collaborative environments and agile methodologies.":
-    "Kỹ năng làm việc nhóm và giao tiếp xuất sắc, có kinh nghiệm làm việc trong môi trường hợp tác và phương pháp agile.",
+  "Excellent teamwork and communication skills, with experience working in collaborative environments.":
+    "Kỹ năng làm việc nhóm và giao tiếp xuất sắc, có kinh nghiệm làm việc trong môi trường hợp tác.",
 
   // Education
   "Academic background and achievements": "Nền tảng học thuật và thành tích",
   "Bachelor's Degree in Software Engineering": "Cử nhân Kỹ thuật Phần mềm",
-  "University of Economics Ho Chi Minh City (UEH)": "Đại học Kinh tế TP.HCM (UEH)",
+  "University of Economics Ho Chi Minh City (UEH)":
+    "Đại học Kinh tế TP.HCM (UEH)",
   "Program Details": "Chi tiết chương trình",
   "Major: Software Engineering": "Chuyên ngành: Kỹ thuật Phần mềm",
-  "Focus: Fullstack Software Development": "Định hướng: Phát triển phần mềm Fullstack",
+  "Focus: Fullstack Software Development":
+    "Định hướng: Phát triển phần mềm Fullstack",
   "Status: Undergraduate": "Trạng thái: Đang học",
   "Academic Performance": "Thành tích học tập",
-  "GPA: 3.62 / 4.0": "GPA: 3.62 / 4.0",
+  "GPA: 3.63 / 4.0": "GPA: 3.63 / 4.0",
 
   // Experience
   "Work Experience": "Kinh nghiệm làm việc",
-  "Professional experience and contributions": "Kinh nghiệm chuyên môn và đóng góp",
+  "Professional experience and contributions":
+    "Kinh nghiệm chuyên môn và đóng góp",
   "Web Developer (Intern)": "Web Developer (Thực tập)",
   "Grant Thornton": "Grant Thornton",
   "Key Responsibilities & Achievements": "Trách nhiệm & Thành tích chính",
@@ -70,7 +75,8 @@ const translations: Record<string, string> = {
 
   // Projects
   "Featured Projects": "Dự án nổi bật",
-  "A showcase of my recent work and contributions": "Giới thiệu các công việc và đóng góp gần đây của tôi",
+  "A showcase of my recent work and contributions":
+    "Giới thiệu các công việc và đóng góp gần đây của tôi",
   "In Progress": "Đang thực hiện",
   Completed: "Hoàn thành",
   "Key Responsibilities:": "Trách nhiệm chính:",
@@ -79,13 +85,20 @@ const translations: Record<string, string> = {
 
   // Skills
   "Skills & Expertise": "Kỹ năng & Chuyên môn",
-  "Technical skills and competencies I have developed": "Các kỹ năng kỹ thuật và năng lực đã phát triển",
+  "Technical skills and competencies I have developed":
+    "Các kỹ năng kỹ thuật và năng lực đã phát triển",
   "Frontend Development": "Phát triển Frontend",
   "Backend Development": "Phát triển Backend",
   "Database & Tools": "Cơ sở dữ liệu & Công cụ",
   "Soft Skills": "Kỹ năng mềm",
+
+  // Certifications
   Certifications: "Chứng chỉ",
-  Awards: "Giải thưởng",
+  "Professional certificates and achievements":
+    "Các chứng chỉ và thành tựu chuyên môn",
+  "TOEIC English Certificate": "Chứng chỉ tiếng Anh TOEIC",
+  "Acumatica Application Developer": "Lập trình viên Ứng dụng Acumatica",
+  "View Certificate": "Xem chứng chỉ",
 
   // Contact
   "Discuss opportunities and collaborate on exciting projects":
@@ -101,35 +114,39 @@ const translations: Record<string, string> = {
   "Last Name": "Họ",
   Subject: "Chủ đề",
   Message: "Tin nhắn",
-}
+};
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState("en")
+  const [language, setLanguage] = useState("en");
 
   const changeLanguage = (lng: string) => {
-    setLanguage(lng)
-    localStorage.setItem("language", lng)
-  }
+    setLanguage(lng);
+    localStorage.setItem("language", lng);
+  };
 
   const t = (text: string) => {
     if (language === "vi") {
-      return translations[text] || text
+      return translations[text] || text;
     }
-    return text
-  }
+    return text;
+  };
 
   useEffect(() => {
-    const savedLanguage = localStorage.getItem("language") || "en"
-    setLanguage(savedLanguage)
-  }, [])
+    const savedLanguage = localStorage.getItem("language") || "en";
+    setLanguage(savedLanguage);
+  }, []);
 
-  return <LanguageContext.Provider value={{ language, changeLanguage, t }}>{children}</LanguageContext.Provider>
+  return (
+    <LanguageContext.Provider value={{ language, changeLanguage, t }}>
+      {children}
+    </LanguageContext.Provider>
+  );
 }
 
 export function useLanguage() {
-  const context = useContext(LanguageContext)
+  const context = useContext(LanguageContext);
   if (context === undefined) {
-    throw new Error("useLanguage must be used within a LanguageProvider")
+    throw new Error("useLanguage must be used within a LanguageProvider");
   }
-  return context
+  return context;
 }

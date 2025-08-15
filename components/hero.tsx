@@ -11,6 +11,7 @@ export default function Hero() {
 
   const texts = [
     "Fullstack Developer",
+    "ERP Developer",
     "Frontend Developer",
     "Backend Developer",
   ];
@@ -106,7 +107,7 @@ export default function Hero() {
                 transition={{ delay: 0.4 }}
               >
                 {t(
-                  "Software engineering student with a background in web development, looking for an opportunity to contribute to real-world projects and grow as a developer."
+                  "Software engineering student with a background in web development, looking for an opportunity to contribute to real-world projects and grow as a developer or technical consultant."
                 )}
               </motion.p>
             </div>
