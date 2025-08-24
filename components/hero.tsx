@@ -158,7 +158,7 @@ export default function Hero() {
                     "bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700",
                 },
                 {
-                  href: "https://www.linkedin.com/in/ki%E1%BB%87t-d%C6%B0%C6%A1ng-l%C3%A2m-gia-b05a0625b/",
+                  href: "https://www.linkedin.com/in/kietdlg/",
                   icon: Linkedin,
                   color:
                     "bg-gray-200 dark:bg-gray-800 hover:bg-blue-300 dark:hover:bg-blue-900",

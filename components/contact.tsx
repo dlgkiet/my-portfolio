@@ -108,7 +108,7 @@ export default function Contact() {
       icon: Linkedin,
       label: "LinkedIn",
       value: "linkedin.com/in/kietdlg",
-      href: "https://www.linkedin.com/in/ki%E1%BB%87t-d%C6%B0%C6%A1ng-l%C3%A2m-gia-b05a0625b/",
+      href: "https://www.linkedin.com/in/kietdlg/",
       gradient: "from-blue-600 to-blue-800",
     },
     {
@@ -220,7 +220,7 @@ export default function Contact() {
                     gradient: "from-gray-700 to-gray-900",
                   },
                   {
-                    href: "https://linkedin.com/in/kietdlg",
+                    href: "https://www.linkedin.com/in/kietdlg/",
                     icon: Linkedin,
                     gradient: "from-blue-600 to-blue-800",
                   },
