@@ -1,12 +1,12 @@
-import Header from "@/components/header"
-import Hero from "@/components/hero"
-import About from "@/components/about"
-import Education from "@/components/education"
-import Experience from "@/components/experience"
-import Projects from "@/components/projects"
-import Skills from "@/components/skills"
-import Contact from "@/components/contact"
-import Certifications from "@/components/certifications"
+import Header from "@/components/layouts/header";
+import Hero from "@/components/sections/hero";
+import About from "@/components/sections/about";
+import Education from "@/components/sections/education";
+import Experience from "@/components/sections/experience";
+import Projects from "@/components/sections/projects";
+import Skills from "@/components/sections/skills";
+import Contact from "@/components/sections/contact";
+import Certifications from "@/components/sections/certifications";
 
 export default function Portfolio() {
   return (
@@ -59,5 +59,5 @@ export default function Portfolio() {
         </main>
       </div>
     </div>
-  )
+  );
 }

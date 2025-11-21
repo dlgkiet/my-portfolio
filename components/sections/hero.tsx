@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Github, Linkedin, Mail, Phone, ArrowRight, Code } from "lucide-react";
-import { useLanguage } from "@/components/language-provider";
+import { useLanguage } from "@/providers/language-provider";
 
 export default function Hero() {
   const { t } = useLanguage();

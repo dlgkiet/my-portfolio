@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Download } from "lucide-react";
-import { ThemeToggle } from "@/components/theme-toggle";
-import { LanguageToggle } from "@/components/language-toggle";
-import { useLanguage } from "@/components/language-provider";
+import { ThemeToggle } from "@/components/common/theme-toggle";
+import { LanguageToggle } from "@/components/common/language-toggle";
+import { useLanguage } from "@/providers/language-provider";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,7 +48,11 @@ export default function Header() {
   // Animation variants
   const headerVariants = {
     hidden: { opacity: 0, y: -50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
   };
 
   const navItemVariants = {
@@ -83,9 +87,16 @@ export default function Header() {
       <nav className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2 sm:space-x-3 group">
-            <a href="#home" className="flex items-center space-x-2 sm:space-x-3 group">
+            <a
+              href="#home"
+              className="flex items-center space-x-2 sm:space-x-3 group"
+            >
               <div className="relative w-10 h-10 sm:w-12 sm:h-12">
-                <img src="https://byvn.net/XrTQ" alt="logo" className="w-full h-full object-contain" />
+                <img
+                  src="https://byvn.net/XrTQ"
+                  alt="logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent group-hover:from-pink-600 group-hover:via-purple-600 group-hover:to-blue-600 transition-all duration-500">
                 kietdlg
@@ -127,7 +138,11 @@ export default function Header() {
               className="md:hidden text-slate-700 dark:text-slate-300"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+              {isMenuOpen ? (
+                <X className="h-4 w-4" />
+              ) : (
+                <Menu className="h-4 w-4" />
+              )}
             </Button>
           </div>
         </div>

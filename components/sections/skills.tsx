@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Code, Server, Database, Zap } from "lucide-react";
-import { useLanguage } from "@/components/language-provider";
+import { useLanguage } from "@/providers/language-provider";
 import { motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 

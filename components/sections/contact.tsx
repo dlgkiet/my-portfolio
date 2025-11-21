@@ -14,10 +14,10 @@ import {
   MessageCircle,
   CheckCircle,
 } from "lucide-react";
-import { useLanguage } from "@/components/language-provider";
+import { useLanguage } from "@/providers/language-provider";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm, ValidationError } from "@formspree/react";
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -153,9 +153,7 @@ export default function Contact() {
             {t("Get In Touch")}
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            {t(
-              "Discuss opportunities and collaborate on exciting projects"
-            )}
+            {t("Discuss opportunities and collaborate on exciting projects")}
           </p>
         </motion.div>
 
@@ -261,7 +259,11 @@ export default function Contact() {
                       className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center text-white shadow-lg"
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
-                      transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+                      transition={{
+                        delay: 0.2,
+                        type: "spring",
+                        stiffness: 200,
+                      }}
                     >
                       <CheckCircle className="h-8 w-8" />
                     </motion.div>
@@ -269,7 +271,9 @@ export default function Contact() {
                       {t("Message Sent!")}
                     </h3>
                     <p className="text-slate-600 dark:text-slate-300">
-                      {t("Thank you for your message. I'll get back to you soon!")}
+                      {t(
+                        "Thank you for your message. I'll get back to you soon!"
+                      )}
                     </p>
                   </motion.div>
                 ) : (
@@ -297,8 +301,8 @@ export default function Contact() {
                             className="border-slate-200 dark:border-slate-700 focus:border-blue-500 dark:focus:border-blue-400 h-10 sm:h-11"
                             required
                           />
-                          <ValidationError 
-                            prefix="First Name" 
+                          <ValidationError
+                            prefix="First Name"
                             field="firstName"
                             errors={state.errors}
                             className="text-red-500 text-sm"
@@ -314,8 +318,8 @@ export default function Contact() {
                             className="border-slate-200 dark:border-slate-700 focus:border-blue-500 dark:focus:border-blue-400 h-10 sm:h-11"
                             required
                           />
-                          <ValidationError 
-                            prefix="Last Name" 
+                          <ValidationError
+                            prefix="Last Name"
                             field="lastName"
                             errors={state.errors}
                             className="text-red-500 text-sm"
@@ -334,8 +338,8 @@ export default function Contact() {
                           className="border-slate-200 dark:border-slate-700 focus:border-blue-500 dark:focus:border-blue-400 h-10 sm:h-11"
                           required
                         />
-                        <ValidationError 
-                          prefix="Email" 
+                        <ValidationError
+                          prefix="Email"
                           field="email"
                           errors={state.errors}
                           className="text-red-500 text-sm"
@@ -352,8 +356,8 @@ export default function Contact() {
                           className="border-slate-200 dark:border-slate-700 focus:border-blue-500 dark:focus:border-blue-400 h-10 sm:h-11"
                           required
                         />
-                        <ValidationError 
-                          prefix="Subject" 
+                        <ValidationError
+                          prefix="Subject"
                           field="subject"
                           errors={state.errors}
                           className="text-red-500 text-sm"
@@ -371,8 +375,8 @@ export default function Contact() {
                           className="border-slate-200 dark:border-slate-700 focus:border-blue-500 dark:focus:border-blue-400 resize-none"
                           required
                         />
-                        <ValidationError 
-                          prefix="Message" 
+                        <ValidationError
+                          prefix="Message"
                           field="message"
                           errors={state.errors}
                           className="text-red-500 text-sm"
@@ -398,7 +402,9 @@ export default function Contact() {
                           ) : (
                             <Send className="h-4 w-4 mr-2" />
                           )}
-                          {state.submitting ? t("Sending...") : t("Send Message")}
+                          {state.submitting
+                            ? t("Sending...")
+                            : t("Send Message")}
                         </Button>
                       </motion.div>
                     </motion.form>

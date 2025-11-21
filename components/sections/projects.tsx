@@ -3,7 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink, Rocket } from "lucide-react";
-import { useLanguage } from "@/components/language-provider";
+import { useLanguage } from "@/providers/language-provider";
 import { motion } from "framer-motion";
 
 export default function Projects() {

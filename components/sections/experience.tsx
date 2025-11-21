@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { useLanguage } from "./language-provider";
+import { useLanguage } from "../../providers/language-provider";
 import { Briefcase, Building2 } from "lucide-react";
 
 interface Company {
@@ -35,9 +35,7 @@ const Experience: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <section
-      id="experience"
-      className="py-24 px-6 relative overflow-hidden">
+    <section id="experience" className="py-24 px-6 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-3xl animate-pulse"></div>
@@ -76,7 +74,7 @@ const Experience: React.FC = () => {
         {/* Grid logo */}
         <div className="relative">
           {/* Gradient overlays */}
-          
+
           {/* Logo grid */}
           <div /* className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 md:gap-12 items-center overflow-hidden" */
             className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12"

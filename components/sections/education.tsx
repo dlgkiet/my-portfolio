@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { GraduationCap, Calendar, Award, BookOpen, Users } from "lucide-react";
-import { useLanguage } from "@/components/language-provider";
+import { useLanguage } from "@/providers/language-provider";
 import { motion } from "framer-motion";
 
 export default function Education() {
