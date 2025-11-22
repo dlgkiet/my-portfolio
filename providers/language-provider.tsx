@@ -27,18 +27,18 @@ const translations: Record<string, string> = {
 
   // Hero
   "Software Developer": "Lập trình viên Phát triển Phần mềm",
-  "Software engineering student with a background in web development, looking for an opportunity to contribute to real-world projects and grow as a developer or technical consultant.":
-    "Sinh viên kỹ thuật phần mềm với nền tảng phát triển web, tìm kiếm cơ hội đóng góp vào các dự án thực tế và phát triển như một developer hoặc technical consultant.",
+  "Software engineering student with a background in web & ERP development, looking for an opportunity to contribute to real-world projects and grow as a developer or technical consultant.":
+    "Sinh viên kỹ thuật phần mềm với nền tảng phát triển web và ERP, tìm kiếm cơ hội đóng góp vào các dự án thực tế và phát triển như một developer hoặc technical consultant.",
   "Get In Touch": "Liên hệ",
   Github: "Github",
 
   // About
   "About Me": "Giới thiệu",
-  "Passionate software engineering student with hands-on experience in web development, eager to contribute to innovative projects and grow in the tech industry.":
-    "Sinh viên kỹ thuật phần mềm đam mê với kinh nghiệm thực tế trong phát triển web, mong muốn đóng góp vào các dự án sáng tạo và phát triển trong ngành công nghệ.",
-  "Full-Stack Development": "Phát triển Full-Stack",
-  "Experienced in both frontend and backend development with modern technologies like React, Laravel, and C#.":
-    "Có kinh nghiệm trong cả phát triển frontend và backend với các công nghệ hiện đại như React, Laravel và C#.",
+  "Passionate software engineering student with hands-on experience in web & ERP development, eager to contribute to innovative projects and grow in the tech industry.":
+    "Sinh viên kỹ thuật phần mềm đam mê với kinh nghiệm thực tế trong phát triển web và ERP, mong muốn đóng góp vào các dự án sáng tạo và phát triển trong ngành công nghệ.",
+  "Web & ERP Development": "Phát triển Web & ERP",
+  "Specialized in building enterprise web applications and ERP modules using Java, Spring Boot, React, REST APIs, and scalable system design.":
+    "Có kinh nghiệm xây dựng các ứng dụng web & ERP bằng Java, Spring Boot, React, REST API và thiết kế hệ thống.",
   "Problem Solving": "Giải quyết vấn đề",
   "Strong analytical skills with a focus on delivering high-quality software solutions and efficient problem-solving approaches.":
     "Kỹ năng phân tích mạnh mẽ với trọng tâm cung cấp các giải pháp phần mềm chất lượng cao và phương pháp giải quyết vấn đề hiệu quả.",
@@ -57,7 +57,7 @@ const translations: Record<string, string> = {
     "Định hướng: Phát triển phần mềm Fullstack",
   "Status: Undergraduate": "Trạng thái: Đang học",
   "Academic Performance": "Thành tích học tập",
-  "GPA: 3.63 / 4.0": "GPA: 3.63 / 4.0",
+  "GPA: 3.66 / 4.0": "GPA: 3.66 / 4.0",
 
   // Experience
   "Work Experience": "Kinh nghiệm làm việc",

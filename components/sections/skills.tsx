@@ -29,13 +29,13 @@ export default function Skills() {
     {
       title: t("Backend"),
       icon: <Server className="h-5 sm:h-6 w-5 sm:w-6" />,
-      skills: "Laravel, REST API, C#",
+      skills: "Java, Spring Boot, REST API",
       gradient: "from-blue-500 via-purple-500 to-pink-500",
     },
     {
       title: t("Database"),
       icon: <Database className="h-5 sm:h-6 w-5 sm:w-6" />,
-      skills: "SQL Server, MySQL, PostgreSQL",
+      skills: "SQL Server, PostgreSQL, MongoDB",
       gradient: "from-blue-500 via-purple-500 to-pink-500",
     },
   ];
@@ -47,8 +47,8 @@ export default function Skills() {
     { name: "TypeScript", icon: "📘", color: "#3178C6" },
     { name: "ReactJS", icon: "⚛️", color: "#61DAFB" },
     { name: "TailwindCSS", icon: "💨", color: "#06B6D4" },
-    { name: "PHP", icon: "🐘", color: "#777BB4" },
-    { name: "Laravel", icon: "🔥", color: "#FF2D20" },
+    { name: "Java", icon: "☕", color: "#f89820" },
+    { name: "Spring Boot", icon: "🌿", color: "#6DB33F" },
     { name: "C#", icon: "🔷", color: "#239120" },
     { name: "SQL", icon: "🗄️", color: "#4479A1" },
     { name: "Git", icon: "🔀", color: "#F05032" },

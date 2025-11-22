@@ -107,7 +107,7 @@ export default function Hero() {
                 transition={{ delay: 0.4 }}
               >
                 {t(
-                  "Software engineering student with a background in web development, looking for an opportunity to contribute to real-world projects and grow as a developer or technical consultant."
+                  "Software engineering student with a background in web & ERP development, looking for an opportunity to contribute to real-world projects and grow as a developer or technical consultant."
                 )}
               </motion.p>
             </div>

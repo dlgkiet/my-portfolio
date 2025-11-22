@@ -11,6 +11,13 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "Job Portal",
+      image: "/images/job-portal.png",
+      github: "https://github.com/mdt3001/it-connect-be",
+      demo: "https://it-connect-fe.vercel.app/",
+      gradient: "from-green-500 to-emerald-500",
+    },
+    {
       title: "Zalo Integration with Acumatica",
       image: "/images/zalo-acumatica.png",
       github: "https://github.com/dlgkiet/Acumatica_Zalo",

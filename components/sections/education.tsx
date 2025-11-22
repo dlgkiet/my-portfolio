@@ -108,7 +108,7 @@ export default function Education() {
                       <div className="flex items-center gap-3 p-4 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-xl border border-yellow-200/50 dark:border-yellow-700/50">
                         <Award className="h-6 w-6 text-yellow-600 dark:text-yellow-400" />
                         <span className="text-lg font-bold text-slate-900 dark:text-white">
-                          {t("GPA: 3.63 / 4.0")}
+                          {t("GPA: 3.66 / 4.0")}
                         </span>
                       </div>
                     </div>

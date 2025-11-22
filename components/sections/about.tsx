@@ -11,9 +11,9 @@ export default function About() {
   const features = [
     {
       icon: <Code className="h-7 w-7" />,
-      title: t("Full-Stack Development"),
+      title: t("Web & ERP Development"),
       description: t(
-        "Experienced in both frontend and backend development with modern technologies like React, Laravel, and C#."
+        "Specialized in building enterprise web applications and ERP modules using Java, Spring Boot, React, REST APIs, and scalable system design."
       ),
       gradient: "from-blue-500 to-cyan-500",
       bgGradient:
@@ -65,7 +65,7 @@ export default function About() {
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed">
             {t(
-              "Passionate software engineering student with hands-on experience in web development, eager to contribute to innovative projects and grow in the tech industry."
+              "Passionate software engineering student with hands-on experience in web & ERP development, eager to contribute to innovative projects and grow in the tech industry."
             )}
           </p>
         </div>
